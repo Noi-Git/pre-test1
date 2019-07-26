@@ -52,18 +52,20 @@
 
 function exercise1(num1) {
   var answer1 = "num1 is small";
-  num1 = 11;
   // ------------------------------------------
   // Write your code for exercise 1 below here:
   // ------------------------------------------
   if (num1 > 10) {
+    answer1 = 20;
     console.log(`The value of num1 is ${num1} and is greater than 10`);
   }
   // ------------------------------------------
   // And above here
   // ------------------------------------------
+  console.log(answer1);
   return answer1;
 }
+exercise1(11);
 
 // EXERCISE 2.
 // Write an if/else conditional statement that if given a number will assign
@@ -80,12 +82,19 @@ function exercise2(num2) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (num2 % 2 === 0) {
+    answer2 = `${num2} is even`;
+    console.log(answer2);
+  } else {
+    answer2 = `${num2} is odd`;
+    console.log(answer2);
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer2;
 }
+exercise2(9);
 
 // EXERCISE 3.
 // Write an if/else if/else block such that if `num3` is positive, then
@@ -101,12 +110,20 @@ function exercise3(num3) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (num3 > 0) {
+    answer3 = `${num3} is positive`;
+  } else if (num3 < 0) {
+    answer3 = `${num3} is nagative`;
+  } else {
+    answer3 = `${num3} is zero`;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
+  console.log(answer3);
   return answer3;
 }
+exercise3(0);
 
 // EXERCISE 4.
 // Write an if/else statement such that if `varA` and `varB` are strings or
@@ -119,12 +136,18 @@ function exercise4(varA, varB) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (typeof varA === typeof varB) {
+    answer4 = "varA and varB are equal";
+  } else {
+    answer4 = "varA and varB differ";
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
+  console.log(answer4);
   return answer4;
 }
+exercise4("noi", 10);
 
 // EXERCISE 5.
 // In exercise 4, what are some of the unexpected cases where `varA` and `varB`
@@ -140,12 +163,18 @@ function exercise6(varA, varB, varC) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (typeof varA === typeof varB) {
+    answer6 = true;
+  } else if (typeof varC !== typeof varA || typeof varB) {
+    answer6 = false;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
+  console.log(answer6);
   return answer6;
 }
+exercise6("yes", 6, 10);
 
 // EXERCISE 8.
 // Use a switch conditional statement with case clauses such that if `num7` is
@@ -165,12 +194,33 @@ function exercise7(num7) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+  switch (num7) {
+    case 1:
+      answer7 = "You won!";
+      break;
 
+    case 7:
+      answer7 = "You are lucky!";
+      break;
+
+    case 101:
+      answer7 = "Welcome to coding 101!";
+      break;
+
+    case 1000000:
+      answer7 = "You are one in a million!";
+      break;
+
+    default:
+      answer7 = "Thanks for that!";
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
+  console.log(answer7);
   return answer7;
 }
+exercise7(10000);
 
 // EXERCISE 8.
 // Using any conditional assign the value of true to answer8 if:
@@ -182,12 +232,18 @@ function exercise8(amount1, amount2, minimum, maximum) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (Math.min(amount1 && amount2)) {
+    answer8 = true;
+  } else {
+    answer8 = false;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
+  console.log(answer8);
   return answer8;
 }
+exercise8(20, 5, 2, 10);
 
 // EXERCISE 9.
 // In this exercise, if `item` is a number, follow the rules given in Exercise 7
