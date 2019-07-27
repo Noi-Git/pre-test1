@@ -13,6 +13,7 @@
 // Underneath the function, write the line of code that runs the function.
 function logGreeting() {
   console.log("Hello!");
+  return;
 }
 logGreeting();
 
@@ -29,15 +30,16 @@ console.log(getName());
 // logGreeting2 should call myName() to get your name.
 // Then print your greeting to the console by calling logGreeting2().
 function logGreeting2() {
-  myName();
-  console.log(`Hello! My name is Noi.`);
+  const name = myName();
+  console.log(`Hello! My name is ${name}.`);
 }
 
 function myName() {
-  console.log("Noi");
+  // const name = "Noi";
+  return "Noi";
 }
-
 logGreeting2();
+// console.log(myName());
 
 // Exercise 4. Write a function that takes 3 parameters that are all numbers.
 // The function should return the sum of the 3 numbers.
@@ -45,10 +47,12 @@ logGreeting2();
 function addNumber(num1, num2, num3) {
   sum = num1 + num2 + num3;
   console.log(sum);
+  return;
 }
 
 function test() {
-  addNumber(5, 8, 2);
+  addNumber(5, 8, 20);
+  return;
 }
 test();
 
@@ -66,7 +70,7 @@ function discount(personAge) {
 }
 
 function test() {
-  discount(65);
+  return discount(65);
 }
 test();
 
@@ -74,7 +78,7 @@ test();
 // The function should print the string the given number of times.
 // Then write some function calls you would use to test your function.
 function twoParameters(num, string) {
-  for (let i = 0; i < num; i++) {
+  for (let i = 0; i < num.length; i++) {
     console.log(string);
   }
   return;
@@ -82,7 +86,7 @@ function twoParameters(num, string) {
 // twoParameters(10, "hi");
 
 function test() {
-  twoParameters(5, "Hi");
+  return twoParameters(5, "Hi");
 }
 test();
 

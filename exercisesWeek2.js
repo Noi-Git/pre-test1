@@ -232,18 +232,21 @@ function exercise8(amount1, amount2, minimum, maximum) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-  if (Math.min(amount1 && amount2)) {
+  if (amount1 + amount2 >= minimum && maximum) {
     answer8 = true;
   } else {
     answer8 = false;
   }
+  // console.log("amount1 + amount2: " + (amount1 + amount2));
+  // console.log("minimum " + minimum);
+  // console.log("maximum " + maximum);
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   console.log(answer8);
   return answer8;
 }
-exercise8(20, 5, 2, 10);
+exercise8(10, 5, 20, 60);
 
 // EXERCISE 9.
 // In this exercise, if `item` is a number, follow the rules given in Exercise 7
@@ -257,7 +260,19 @@ function exercise9(item) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  function exercise9(item) {
+    var answer9;
+    // --------------------------------------------
+    if (typeof item === "number") {
+      console.log(`${item} is a number. Thanks for that!`);
+    } else {
+      console.log(`${item} is not a number. Please send a number!`);
+    }
+    // --------------------------------------------
+    return answer9;
+  }
+  exercise9(10);
+  exercise9("Hi");
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -279,7 +294,21 @@ function exercise10(num10) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+  function exercise10(num10) {
+    var answer10;
+    // --------------------------------------------
+    if (num10 % 15 === 0) {
+      console.log("Fizz Buzz");
+    } else if (num10 % 3 === 0) {
+      console.log("Fizz");
+    } else if (num10 % 5 === 0) {
+      console.log("Buzz");
+    } else console.log(`The number ${num10} cannot be divided by 3, 5, or 15`);
 
+    // --------------------------------------------
+    return answer10;
+  }
+  exercise10(60);
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -289,6 +318,6 @@ function exercise10(num10) {
 // Congrats, you made it to the end! You rock!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
+// These questions are not easy. The one I had trouble with, I used the combination of note I took while learning javascript and google for referances.
 
 // Email your file to us or commit your file to GitHub and email us a link.
