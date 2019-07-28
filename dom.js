@@ -1,3 +1,21 @@
+/*
+<!--JS and the DOM-->
+
+<!--
+  READ THIS FIRST!
+This file is an HTML file.You'll put your JS code for the exercises in a <scipt> tag at the bottom of this file.
+Open this file in Google Chrome by opening Chrome, typing command - O, and selecting this file.
+Or in Chrome you can use the menu bar by doing File -> Open.
+As you add JS code to the file, you can refresh the page and see your code take effect.
+You can also type your JS code in the Console tab of Chrome Developer Tools to see it take effect.
+  Note: Usually you would put your HTML and JS in separate files, but for simplicity we're 
+putting them in the same file for this exercise.
+Read through the HTML code given, then scroll down to the exercises below.
+Type your JavaScript code for each exercise below each exercise description.
+For this exercise, don't change the HTML code given.
+-->
+*/
+
 <html>
 
 <body>
@@ -75,7 +93,7 @@
   const elements = document.getElementsByClassName(myClass).elements;
 
   for (let i = 0; i <= elements.lenght; i++) {
-    document.getElementsByClassName(myClass).innerHTML = "!";
+    document.getElementsByClassName(myClass).innerHTML = "!"
   }
     
     
