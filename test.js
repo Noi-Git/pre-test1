@@ -11,10 +11,10 @@
 // }
 // console.log(answer1);
 // couldn't get the right answer
-for (let outsideCounter = 0; outsideCounter <= 3; outsideCounter++) {
+for (let outsideCounter = 1; outsideCounter <= 3; outsideCounter++) {
   console.log("counting down from", outsideCounter);
   for (
-    let insideCounter = outsideCounter + 1;
+    let insideCounter = outsideCounter + 2;
     insideCounter >= outsideCounter;
     insideCounter--
   ) {
