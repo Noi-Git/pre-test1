@@ -197,17 +197,17 @@ inside 1
 */
 
 // could not get the right answer
-  for (let outsideCounter = 1; outsideCounter <= 3; outsideCounter++) {
-    console.log("counting down from", outsideCounter);
-    for (
-      let insideCounter = outsideCounter + 2;
-      insideCounter >= outsideCounter;
-      insideCounter--
-    ) {
-      console.log("inside", insideCounter);
-    }
-    console.log("***********************************");
+for (let outsideCounter = 0; outsideCounter <= 3; outsideCounter++) {
+  console.log("counting down from", outsideCounter);
+  for (
+    let insideCounter = outsideCounter;
+    insideCounter > 0;
+    insideCounter--
+  ) {
+    console.log("inside", insideCounter);
   }
+  console.log("***********************************");
+}
 
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you? 
